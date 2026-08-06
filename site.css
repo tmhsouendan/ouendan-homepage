@@ -30,6 +30,7 @@ header {
 /* ===== ナビ ===== */
 
 .nav {
+    display: none;
     position: fixed;
 
     top: -100%;
@@ -88,8 +89,12 @@ header {
 
 /* ===== PC表示 ===== */
 
-@media(min-width:768px) {
+@media(max-width:768px) {
 
+    .humburger{
+        display: block;
+    }
+    
     .menu-btn {
         display: none;
     }
