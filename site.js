@@ -1,34 +1,11 @@
-const button = document.querySelector(".menu-btn");
-const nav = document.querySelector(".nav");
-const overlay = document.querySelector(".overlay");
-const links = document.querySelectorAll(".nav a");
+const slides = document.querySelectorAll(".slide");
 
-function closeMenu() {
+let current = 0;
 
-    nav.classList.remove("open");
-    overlay.classList.remove("show");
+setInterval(() => {
+    slide[current].classList.remove("active");
 
-    button.innerHTML = "☰";
-    button.setAttribute("aria-expanded", "false");
-}
+    current = (current + 1) % slides.lengsth;
 
-button.addEventListener("click", () => {
-
-    nav.classList.toggle("open");
-    overlay.classList.toggle("show");
-
-    const open = nav.classList.contains("open");
-
-    button.innerHTML = open ? "✕" : "☰";
-
-    button.setAttribute("aria-expanded", open);
-
-});
-
-overlay.addEventListener("click", closeMenu);
-
-links.forEach(link => {
-
-    link.addEventListener("click", closeMenu);
-
-});
+    slides[current].classList.add("active");
+}, 4000);

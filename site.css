@@ -2,3 +2,38 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+    .header {
+        position: sticky;
+        top: 0;
+        margin-bottom: 30px;
+        z-index: 1000;
+        background-color: rgb(123, 0, 0);
+        color: white;
+        font-size: 30px;
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+    }
+
+    /*スライドショー*/
+    .slideshow {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        opacity: 0;
+        transition: opacity 1s ease;
+    }
+
+    .slide.active {
+        opacity: 1;
+    }
