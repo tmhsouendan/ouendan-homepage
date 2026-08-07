@@ -1,12 +1,12 @@
-    body {
-        background-color: red;
-    }
-    
     a {
-    color: inherit;
+    color: white;
     text-decoration: none;
     }
+/*
+    header {
 
+    }
+*/
     .header {
         position: sticky;
         top: 0;
@@ -14,7 +14,7 @@
         z-index: 1000;
         background-color: rgb(123, 0, 0);
         color: white;
-        font-size: 30px;
+        font-size: 50px;
         font-family: "Yu Mincho", "Hiragino Mincho ProN", "MS PMincho", serif;
     }
 
