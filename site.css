@@ -1,4 +1,4 @@
-    a {
+    .a {
     color: white;
     text-decoration: none;
     }
@@ -7,7 +7,7 @@
 
     }
 */
-    header {
+    .header {
         position: sticky;
         top: 0;
         margin-bottom: 30px;
