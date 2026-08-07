@@ -8,6 +8,8 @@ setInterval(() => {
     current = (current + 1) % slides.length;
 
     slides[current].classList.add("active");
+
+    document.getElementById("debug").textContent = current;
 }, 4000);
 
-document.getElementById("debug").textContent = current;
+
