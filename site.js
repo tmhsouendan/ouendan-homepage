@@ -9,3 +9,5 @@ setInterval(() => {
 
     slides[current].classList.add("active");
 }, 4000);
+
+document.getElementById("debug").textContent = current;
