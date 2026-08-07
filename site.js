@@ -1,4 +1,4 @@
-alert("読みこまれました")
+alert("読みこまれました");
 const slides = document.querySelectorAll(".slide");
 
 let current = 0;
