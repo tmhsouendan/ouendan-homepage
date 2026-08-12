@@ -15,18 +15,56 @@
 
 <body>
     <header class="header">
-    <a href="home" class="a" >高松高校応援団</a>
+        <a href="index.html" class="header-logo">
+            <img src="images/高松高校応援団(emblem).png">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="AboutOuendan.html">応援団とは</a></li>
+                <!-- 応援団とは：応援団という概念自体の説明 -->
+
+                <li class="dropdown">
+                    <a href="#">本団紹介</a>
+
+                    <div class="dropdown-menu">
+                        <a href="AboutUs.html">本団概要</a>
+                        <!--・本団概要：本団の軽い沿革を交えながら団を紹介する-->
+                        <a href="AssociateStile.html">組織体制</a>
+                        <!--・組織体制：組織図を用いて各役職の紹介を文章で行う-->
+                        <a href="OgiTechnique.html">扇技紹介</a>
+                        <!--・扇技紹介：扇技の動画が乗せられたらうれしいが無理そうかも。50年史を用いるかも-->
+                        <a href="Equipments.html">装具紹介</a>
+                        <!-- ・装具紹介：団旗と太鼓と手旗etc...写真と共に説明 -->
+                        <a href="songs.html">校歌・応援歌紹介</a>
+                        <!-- ・校歌・応援歌紹介：音声と共に紹介できたらいいなあ -->
+                    </div>
+                </li>
+
+                <li><a href="index.html">活動内容</a></li>
+                <!-- ・活動概要：規約どおりに紹介
+                ・年間スケジュール：規約を基に作る -->
+                <li><a href="index.html">お知らせ</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="slideshow">
         <img src="images/IMG_0023.jpeg" class="slide active">
         <img src="images/IMG_0020.jpeg" class="slide">
         <img src="images/IMG_0024.jpeg" class="slide">
+        <div class="hero-text">
+            <h1>高松高校応援団</h1><br>
+            <p>~道標~</p>
+        </div>
     </div>
 
-    <p>
-        ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>ああ<br>
-    </p>
+    <div class="text">
+        <br>
+        <h1>主将代表挨拶</h1>
+        <br>
+        <p id="welcomeMessage"></p>
+    </div>
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
