@@ -1,5 +1,5 @@
 //JSON読み込み//
-fetch('/text.json')
+fetch('text.json')
     .then(response => response.json())
     .then(text => {
         console.log(text);
